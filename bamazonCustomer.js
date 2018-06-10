@@ -92,6 +92,8 @@ function SHOP() {
                   console.log("We have enough, we'll take your money now...thanks!")
                   var newAmount = chosenItem.stock_quantity - answer.amount;
                   console.log(results[i].product_name +" "   + results[i].stock_quantity + " Left in stock.");
+
+                  console.log("Total cost of purchase: " + results[i].price*answer.amount)
                  /* connection.query(
                     "UPDATE products SET ?",
                     {
